@@ -56,6 +56,6 @@ yarn format
 yarn lint
 ```
 
-2. Use [convention commits](https://www.conventionalcommits.org/ru/v1.0.0/)
+2. Use [conventional commits](https://www.conventionalcommits.org/ru/v1.0.0/)
 
 3. Do **not** push direct into main. Insead, use pull requests
