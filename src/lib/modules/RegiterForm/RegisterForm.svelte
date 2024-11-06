@@ -10,6 +10,7 @@
     DropdownMenuItem,
     DropdownMenuLabel,
     DropdownMenuTrigger,
+    DropdownMenuSeparator,
   } from '$lib/components/ui/dropdown-menu';
 
   let formState: FormState = {
@@ -162,6 +163,7 @@
         </DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuLabel>Выберите роль</DropdownMenuLabel>
+          <DropdownMenuSeparator />
           <DropdownMenuItem on:click={() => (formState.role = 'user')}
             >Пользователь</DropdownMenuItem>
           <DropdownMenuItem on:click={() => (formState.role = 'admin')}
