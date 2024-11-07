@@ -82,8 +82,9 @@
   </p>
 </div>
 
-<div class="max-w-md mx-auto p-6 bg-white dark:bg-zinc-900 rounded-lg shadow-md" style="width:350px">
-
+<div
+  class="max-w-md mx-auto p-6 bg-white dark:bg-zinc-900 rounded-lg shadow-md"
+  style="width:350px">
   <form on:submit={handleSubmit}>
     <div class="mb-4">
       <Label for="name">Имя</Label>
