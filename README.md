@@ -1,6 +1,6 @@
-# Hack frontend template
+# Tambov frontend
 
-Our hackaton template for frontend
+Our hackaton frontend in Tambov
 
 ## Contents
 

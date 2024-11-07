@@ -11,8 +11,8 @@
       url: '/',
     },
     {
-      title: 'Врачи',
-      url: '/doctors',
+      title: 'О нас',
+      url: '/about',
     },
   ];
 </script>
