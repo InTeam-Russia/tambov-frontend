@@ -11,7 +11,7 @@
   const toggleNav = () => {
     isNavToggled = !isNavToggled;
   };
-  
+
   const isAuth = true; // TODO: check if auth?
 </script>
 
