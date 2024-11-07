@@ -31,6 +31,13 @@
     return regex.test(email);
   };
 
+  const validatePassword = (password: string): boolean => {
+    const hasLetter = /[a-zA-Z]/.test(password);
+    const hasDigit = /\d/.test(password);
+
+    return hasDigit && hasLetter;
+  };
+
   const handleSubmit: (arg0: SubmitEvent) => void = (event: SubmitEvent) => {
     event.preventDefault();
     errors = {};
@@ -51,6 +58,8 @@
 
     if (!formState.password) {
       errors.password = 'Пароль обязателен';
+    } else if (!validatePassword(formState.password)) {
+      errors.password = 'Пароль должен содержать хотя бы одну цифру и букву';
     }
 
     if (formState.password !== formState.confirmPassword) {
