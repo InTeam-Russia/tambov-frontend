@@ -12,7 +12,7 @@
     isNavToggled = !isNavToggled;
   };
 
-  const isAuth = false; // TODO: check if auth?
+  const isAuth = true; // TODO: check if auth?
 </script>
 
 <nav
@@ -21,7 +21,7 @@
     href="/"
     class="flex flex-row items-center text-xl font-bold"
     ><Hospital />
-    <span class="w-full hidden sm:inline">&nbsp;&nbsp;Педицинское&nbsp;GOVнище</span>
+    <span class="w-full hidden sm:inline">&nbsp;&nbsp;ЖивТех:&nbsp;Медицина</span>
   </a>
   <div class="flex flex-row items-center flex-nowrap">
     <ul
