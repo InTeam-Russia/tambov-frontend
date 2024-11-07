@@ -1,10 +1,22 @@
 <script lang="ts">
   import { ModeWatcher } from 'mode-watcher';
   import '../app.css';
-  import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
+  import Navbar from '$lib/modules/Navbar/Navbar.svelte';
+  import type { NavLink } from '$lib/modules/Navbar/types';
   let { children } = $props();
+
+  const navlinks: NavLink[] = [
+    {
+      title: "Главная",
+      url: "/"
+    },
+    {
+      title: "Врачи",
+      url: "/doctors"
+    },
+  ]
 </script>
 
 <ModeWatcher />
-<ThemeSwitcher />
+<Navbar {navlinks} />
 {@render children()}
