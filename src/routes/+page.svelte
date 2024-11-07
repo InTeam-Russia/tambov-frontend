@@ -48,7 +48,7 @@
     if (errorINN) {
       return;
     }
-    goto('organisation/' + value);
+    goto('organisation/inn/' + value);
   };
   const loadOrganisationByName = (event: Event) => {
     event.preventDefault();
@@ -56,7 +56,7 @@
     if (errorName) {
       return;
     }
-    goto(`organisation?${name}`);
+    goto(`organisation/name/${name}`);
   };
 </script>
 
