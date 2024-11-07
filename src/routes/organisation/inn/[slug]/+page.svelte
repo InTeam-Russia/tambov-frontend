@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { ChevronLeft } from "lucide-svelte/icons/chevron-left"
+    import ChevronLeft from "lucide-svelte/icons/chevron-left"
     import NoInnSection from "$lib/modules/NoInnSection/NoInnSection.svelte"
     import OrgsList from "$lib/modules/OrgsList/OrgsList.svelte"
     import { Button } from "$lib/components/ui/button"

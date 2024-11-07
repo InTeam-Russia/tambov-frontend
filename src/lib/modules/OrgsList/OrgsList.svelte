@@ -43,7 +43,8 @@
         </div>
     </Card.Content>
     <Card.Footer class="flex justify-between">
-    <Button>Скачать .docx</Button>
+    <Button href="/files/imek.docx">Скачать ИМЭК</Button>
+    <Button href="/files/remd.docx">Скачать РЭМД</Button>
     </Card.Footer>
 </Card.Root>
 {/each}
