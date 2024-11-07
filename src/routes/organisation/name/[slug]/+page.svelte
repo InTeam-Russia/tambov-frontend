@@ -16,8 +16,7 @@
 
 {#if error}
 <NoInnSection />
-{/if}
-
+{:else}
 <section class="mt-16 max-w-screen-lg mx-auto">
     <h2 class="text-4xl mb-4">
         <Button href="/" variant="outline" size="icon">
@@ -27,5 +26,4 @@
     </h2>
     <OrgsList orgs={orgs} />
 </section>
-
-<h1>{data.slug}</h1>
+{/if}
