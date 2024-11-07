@@ -6,12 +6,21 @@
     import OrgsList from "$lib/modules/OrgsList/OrgsList.svelte"
 
     import getOrganisations from "$api/get-orgs-by-name.ts"
+  import { onMount } from "svelte";
 
     export let data;
 
-    let orgs = getOrganisations(data.slug)
-    console.log(orgs)
-    let error = orgs === "error"
+    let orgs = [];
+    let error = false;
+
+    const getOrgs = async () => {
+        orgs = await getOrganisations(data.slug)
+        console.log(orgs)
+        error = orgs === "error"
+    }
+
+    onMount(getOrgs)
+
 </script>
 
 {#if error}
