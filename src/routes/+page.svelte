@@ -50,7 +50,6 @@
     }
     goto('organisation/' + value);
   };
-
   const loadOrganisationByName = (event: Event) => {
     event.preventDefault();
     errorName = name === '';
