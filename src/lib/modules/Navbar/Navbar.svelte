@@ -11,6 +11,8 @@
   const toggleNav = () => {
     isNavToggled = !isNavToggled;
   };
+
+  const isAuth = false; // TODO: check if auth?
 </script>
 
 <nav
@@ -33,6 +35,20 @@
           </a>
         </li>
       {/each}
+      <li>
+        {#if isAuth}
+          <a href="/profile">
+            <Button variant="ghost">Профиль</Button>
+          </a>
+        {:else}
+          <a href="/auth/login">
+            <Button variant="ghost">Вход</Button>
+          </a>
+          <a href="/auth/register">
+            <Button variant="ghost">Регистрация</Button>
+          </a>
+        {/if}
+      </li>
       <li>
         <ThemeSwitcher />
       </li>
