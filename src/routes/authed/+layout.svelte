@@ -18,5 +18,5 @@
 </script>
 
 <ModeWatcher />
-<Navbar {navlinks} isAuth={false} />
+<Navbar {navlinks} isAuth={true} />
 {@render children()}
