@@ -5,6 +5,8 @@
   import { Eye, EyeOff } from 'lucide-svelte';
   import AuthenticationLight from '/static/images/auth_light.jpg?enhanced';
   import AuthenticationDark from '/static/images/auth_dark.jpg?enhanced';
+  import { goto } from '$app/navigation';
+  import { isAuthGlobal } from '$lib/stores';
 
   let formState: FormState = {
     email: '',
@@ -39,6 +41,8 @@
 
     // TODO: Отправка данных на сервер (заглушка)
     console.log('Отправка данных на сервер:', formState);
+    $isAuthGlobal = true
+    goto("/")
   };
 </script>
 
