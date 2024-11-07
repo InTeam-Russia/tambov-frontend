@@ -1,4 +1,7 @@
-const getOrganisations = (inn: string) => {
+import ConnectionInfo from "./api";
+import SimpleGetJson from "./simple-get-json";
+const getOrganisations = async (inn: string) => {
+    //return await SimpleGetJson(ConnectionInfo.url + "/get_data_by_inn/" + inn);
     let json = [
         {
           "value": "ГКСУ АО ЦС АДАПТАЦИИ",

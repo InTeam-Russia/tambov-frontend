@@ -12,7 +12,7 @@
     isNavToggled = !isNavToggled;
   };
 
-  const isAuth = true; // TODO: check if auth?
+  let isAuth = true;
 </script>
 
 <nav
