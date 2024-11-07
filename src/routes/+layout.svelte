@@ -7,14 +7,14 @@
 
   const navlinks: NavLink[] = [
     {
-      title: "Главная",
-      url: "/"
+      title: 'Главная',
+      url: '/',
     },
     {
-      title: "Врачи",
-      url: "/doctors"
+      title: 'Врачи',
+      url: '/doctors',
     },
-  ]
+  ];
 </script>
 
 <ModeWatcher />
