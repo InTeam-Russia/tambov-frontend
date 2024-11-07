@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { Button } from '$lib/components/ui/button';
+	import { Button } from "$lib/components/ui/button";
   import { Input } from '$lib/components/ui/input';
   import { Label } from '$lib/components/ui/label';
   import { Eye, EyeOff } from 'lucide-svelte';
-  import type { FormState, FormErrors } from './types';
+	import AuthenticationLight from "/static/images/auth_light.jpg?enhanced";
+	import AuthenticationDark from "/static/images/auth_dark.jpg?enhanced";
 
   let formState: FormState = {
     email: '',
@@ -41,8 +42,16 @@
   };
 </script>
 
+<div>
+
+  <div class="flex flex-col space-y-2 text-center">
+    <h1 class="text-2xl font-semibold tracking-tight">Авторизация</h1>
+    <p class="text-muted-foreground text-sm">
+      Чтобы войти, укажите свою почту и пароль
+    </p>
+  </div>
+
 <div class="max-w-md mx-auto p-6 bg-white dark:bg-zinc-900 rounded-lg shadow-md">
-  <h2 class="text-2xl font-bold text-center mb-4">Авторизация</h2>
 
   <form on:submit={handleSubmit}>
     <div class="mb-4">
@@ -92,7 +101,9 @@
   <p class="mt-4 text-center text-sm">
     Нет аккаунта?
     <a
-      href="/register"
+      href="/auth/register"
       class="text-blue-600 hover:underline">Зарегистрироваться</a>
   </p>
+</div>
+
 </div>
