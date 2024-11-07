@@ -66,8 +66,14 @@
   };
 </script>
 
-<div class="max-w-md mx-auto p-6 bg-white dark:bg-zinc-900 rounded-lg shadow-md">
-  <h2 class="text-2xl font-bold text-center mb-4">Регистрация</h2>
+<div class="flex flex-col space-y-2 text-center">
+  <h1 class="text-2xl font-semibold tracking-tight">Регистрация</h1>
+  <p class="text-muted-foreground text-sm">
+    Для создания аккаунта представьтесь, введите почту и придумайте пароль
+  </p>
+</div>
+
+<div class="max-w-md mx-auto p-6 bg-white dark:bg-zinc-900 rounded-lg shadow-md" style="width:350px">
 
   <form on:submit={handleSubmit}>
     <div class="mb-4">
@@ -155,23 +161,6 @@
       </button>
     </div>
 
-    <div class="mb-4">
-      <Label>Роль</Label>
-      <DropdownMenu>
-        <DropdownMenuTrigger class="w-full mt-1 border border-gray-300 rounded-md p-2">
-          {formState.role === 'user' ? 'Пользователь' : 'Администратор'}
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          <DropdownMenuLabel>Выберите роль</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem on:click={() => (formState.role = 'user')}
-            >Пользователь</DropdownMenuItem>
-          <DropdownMenuItem on:click={() => (formState.role = 'admin')}
-            >Администратор</DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </div>
-
     <Button
       type="submit"
       variant="default"
@@ -183,7 +172,7 @@
   <p class="mt-4 text-center text-sm">
     Уже есть аккаунт?
     <a
-      href="/auth"
+      href="/auth/login"
       class="text-blue-600 hover:underline">Войти</a>
   </p>
 </div>

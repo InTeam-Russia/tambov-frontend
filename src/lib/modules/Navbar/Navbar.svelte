@@ -14,7 +14,7 @@
 </script>
 
 <nav
-  class="flex flex-row justify-between items-center sticky top-0 z-20 mb-16 py-2 px-8 bg-white shadow-md dark:bg-zinc-900">
+  class="flex flex-row justify-between items-center sticky top-0 z-20 py-2 px-8 bg-white shadow-md dark:bg-zinc-900">
   <a
     href="/"
     class="flex flex-row items-center text-xl font-bold"
