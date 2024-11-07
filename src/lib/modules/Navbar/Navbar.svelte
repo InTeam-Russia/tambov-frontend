@@ -12,7 +12,11 @@
     isNavToggled = !isNavToggled;
   };
 
+<<<<<<< HEAD
   let isAuth = true;
+=======
+  export let isAuth; // TODO: check if auth?
+>>>>>>> f2c75a5 (aboba)
 </script>
 
 <nav

@@ -12,6 +12,7 @@
     DropdownMenuTrigger,
     DropdownMenuSeparator,
   } from '$lib/components/ui/dropdown-menu';
+  import { goto } from '$app/navigation';
 
   let formState: FormState = {
     name: '',
@@ -72,6 +73,7 @@
 
     // TODO: Отправка данных на сервер (заглушка)
     console.log('Отправка данных на сервер:', formState);
+    goto("/")
   };
 </script>
 
